@@ -2,16 +2,8 @@ public class Types
 {
   public void ShowRun()
   {
-    var intMax = int.MaxValue;
-    var intMin = int.MinValue;
-    Console.WriteLine($"max value {intMax}");
-    Console.WriteLine($"min value {intMin}");
-    Console.WriteLine($"max value +1 {intMax + 1}");
-    Console.WriteLine($"min value -1 {intMin - 1}");
-
-    var decimalMax = decimal.MaxValue;
-    Console.WriteLine($"decimal max: {decimalMax}");
-    // Console.WriteLine($"decimal max + 1: {decimalMax+1}");
+    //overflow
+    //overflow decimal
 
     int? intNullable = 5;
     System.Nullable<int> intNull = null;
