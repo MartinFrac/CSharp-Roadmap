@@ -16,4 +16,20 @@ public class TypesTest
     var actual = _typesRepo.GetInfinity();
     Assert.Equal(expected, actual);
   }
+
+  [Fact]
+  public void ShouldReturnNegativeInfinity()
+  {
+    var expected = double.NegativeInfinity;
+    var actual = _typesRepo.GetInfinity();
+    Assert.Equal(expected, actual);
+  }
+  
+  [Fact]
+  public void ShouldReturnMaxInteger()
+  {
+    var expected = int.MaxValue;
+    var actual = _typesRepo.GetMaxInt();
+    Assert.Equal(expected, actual);
+  }
 }
