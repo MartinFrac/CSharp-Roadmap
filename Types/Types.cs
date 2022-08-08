@@ -15,15 +15,16 @@ public class Types
 
     int? intNullable = 5;
     System.Nullable<int> intNull = null;
-    var hasValue = intNullable.HasValue;
-    var hasValue2 = intNull.HasValue;
-    Console.WriteLine($"has value: {hasValue}");
-    Console.WriteLine($"has value: {hasValue2}");
 
     int intBox = 32;
     object box = intBox;
     Console.WriteLine($"box: {intBox}");
     if (box is int) Console.WriteLine("its an int");
+  }
+  
+  public bool? HasIntGotValue(int? nullableInt)
+  {
+    return null;
   }
 
   public double? GetInfinity()

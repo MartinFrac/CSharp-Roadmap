@@ -32,4 +32,16 @@ public class TypesTest
     var actual = _typesRepo.GetMaxInt();
     Assert.Equal(expected, actual);
   }
+  
+  [Fact]
+  [Theory]
+  [InlineData(null)]
+  [InlineData(4)]
+  [InlineData(null)]
+  public void ShouldReturnTrueWhenValuePresent(int? value)
+  {
+    var expected = value.HasValue;
+    var actual = _typesRepo.HasIntGotValue(value);
+    Assert.Equal(expected, actual);
+  }
 }
