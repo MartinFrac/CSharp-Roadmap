@@ -2,6 +2,10 @@
 
 Detailed overview of C# types and its uses
 
+Run:
+
+dotnet run
+
 Types of Types 😂
   by reference
   by value
