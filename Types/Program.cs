@@ -47,7 +47,6 @@ var decimalMax = decimal.MaxValue;
 Console.WriteLine($"decimal max: {decimalMax}");
 // Console.WriteLine($"decimal max + 1: {decimalMax+1}");
 
-
 int? intNullable = 5;
 System.Nullable<int> intNull = null;
 var hasValue = intNullable.HasValue;

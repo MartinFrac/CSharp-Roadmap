@@ -1,7 +1,17 @@
 public class Types
 {
-  public double GetInfinity()
+  public double? GetInfinity()
   {
-    return double.MaxValue;
+    return null;
+  }
+  
+  public double? GetNegativeInfinity()
+  {
+    return null;
+  }
+  
+  public int? GetMaxInt()
+  {
+    return null;
   }
 }
