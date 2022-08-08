@@ -1,7 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//Simple types
+using System.Text;
 
-//Simple types
 sbyte sbyteT = default; //0
 byte byteT = default; //0
 short shortT = default; //0 -- 16
@@ -16,20 +15,21 @@ double doubleT = default; //0.0d
 bool boolT = default; //false
 decimal decimalT = default; //0m
 
-Console.WriteLine($"sbyteT: {sbyteT}");
-Console.WriteLine($"byteT: {byteT}");
-Console.WriteLine($"shortT: {shortT}");
-Console.WriteLine($"ushortT: {ushortT}");
-Console.WriteLine($"intT: {intT}");
-Console.WriteLine($"uintT: {uintT}");
-Console.WriteLine($"longT: {longT}");
-Console.WriteLine($"ulongT: {ulongT}");
-Console.WriteLine($"charT: {charT}");
-Console.WriteLine($"floatT: {floatT}");
-Console.WriteLine($"doubleT: {doubleT}");
-Console.WriteLine($"boolT: {boolT}");
-Console.WriteLine($"decimalT: {decimalT}");
-
+var sb = new StringBuilder();
+sb.AppendLine($"sbyteT: {sbyteT}");
+sb.AppendLine($"byteT: {byteT}");
+sb.AppendLine($"shortT: {shortT}");
+sb.AppendLine($"ushortT: {ushortT}");
+sb.AppendLine($"intT: {intT}");
+sb.AppendLine($"uintT: {uintT}");
+sb.AppendLine($"longT: {longT}");
+sb.AppendLine($"ulongT: {ulongT}");
+sb.AppendLine($"charT: {charT}");
+sb.AppendLine($"floatT: {floatT}");
+sb.AppendLine($"doubleT: {doubleT}");
+sb.AppendLine($"boolT: {boolT}");
+sb.AppendLine($"decimalT: {decimalT}");
+Console.WriteLine(sb);
 
 var infinity = 1.0 / 0.0;
 var negativeInfinity = -1.0 / 0.0;
