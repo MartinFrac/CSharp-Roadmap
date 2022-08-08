@@ -16,19 +16,19 @@ bool boolT = default; //false
 decimal decimalT = default; //0m
 
 var sb = new StringBuilder();
-sb.AppendLine($"sbyteT: {sbyteT}");
-sb.AppendLine($"byteT: {byteT}");
-sb.AppendLine($"shortT: {shortT}");
-sb.AppendLine($"ushortT: {ushortT}");
-sb.AppendLine($"intT: {intT}");
-sb.AppendLine($"uintT: {uintT}");
-sb.AppendLine($"longT: {longT}");
-sb.AppendLine($"ulongT: {ulongT}");
-sb.AppendLine($"charT: {charT}");
-sb.AppendLine($"floatT: {floatT}");
-sb.AppendLine($"doubleT: {doubleT}");
-sb.AppendLine($"boolT: {boolT}");
-sb.AppendLine($"decimalT: {decimalT}");
+sb.AppendLine(String.Format("{0,10} {1,10}","sbyteT:", sbyteT));
+sb.AppendLine(String.Format("{0,10} {1,10}","byteT:", byteT));
+sb.AppendLine(String.Format("{0,10} {1,10}","shortT:", shortT));
+sb.AppendLine(String.Format("{0,10} {1,10}","ushortT:", ushortT));
+sb.AppendLine(String.Format("{0,10} {1,10}","intT:", intT));
+sb.AppendLine(String.Format("{0,10} {1,10}","uintT:", uintT));
+sb.AppendLine(String.Format("{0,10} {1,10}","longT:", longT));
+sb.AppendLine(String.Format("{0,10} {1,10}","ulongT:", ulongT));
+sb.AppendLine(String.Format("{0,10} {1,10}","charT:", charT));
+sb.AppendLine(String.Format("{0,10} {1,10}","floatT:", floatT));
+sb.AppendLine(String.Format("{0,10} {1,10}","doubleT:", doubleT));
+sb.AppendLine(String.Format("{0,10} {1,10}","boolT:", boolT));
+sb.AppendLine(String.Format("{0,10} {1,10}","decimalT:", decimalT));
 Console.WriteLine(sb);
 
 var infinity = 1.0 / 0.0;
