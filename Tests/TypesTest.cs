@@ -21,7 +21,7 @@ public class TypesTest
   public void ShouldReturnNegativeInfinity()
   {
     var expected = double.NegativeInfinity;
-    var actual = _typesRepo.GetInfinity();
+    var actual = _typesRepo.GetNegativeInfinity();
     Assert.Equal(expected, actual);
   }
   
@@ -33,11 +33,9 @@ public class TypesTest
     Assert.Equal(expected, actual);
   }
   
-  [Fact]
   [Theory]
   [InlineData(null)]
   [InlineData(4)]
-  [InlineData(null)]
   public void ShouldReturnTrueWhenValuePresent(int? value)
   {
     var expected = value.HasValue;
